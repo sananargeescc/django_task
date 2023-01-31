@@ -45,7 +45,7 @@ class Mark(models.Model)  :
     physics = models.IntegerField(validators=[MaxValueValidator(50)])
     chemistry = models.IntegerField(validators=[MaxValueValidator(50)])
     biology = models.IntegerField(validators=[MaxValueValidator(50)])
-    Total = models.IntegerField(validators=[MaxValueValidator(50)])
+    Total = models.IntegerField(validators=[MaxValueValidator(250)])
     Total_mark = models.IntegerField(default=0)
 
     def __str__(self):
