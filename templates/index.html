@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+<style>
+<!--    .container {-->
+<!--  position: relative;-->
+<!--  width: 100%;-->
+<!--  max-width: 400px;-->
+<!--}-->
+
+<!--.container img {-->
+<!--  width: 100%;-->
+<!--  height: 100%;-->
+<!--}-->
+
+.container .btn {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #555;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.container .btn:hover {
+  background-color: red;
+}
+.container .school{
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color:red;
+
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <img src="https://media.istockphoto.com/id/1349297974/photo/multi-ethnic-group-of-latin-american-college-students-smiling.jpg?b=1&s=170667a&w=0&k=20&c=dkJyrGwyHIkHCWadKMBqsLD5pk-jHH6lpB2Ig23ba-E=" alt="Snow" style="width:100%">
+    <center><h1 class="school"> WELCOME TO ABC SCHOOL</h1></center>
+
+  <a class="btn" style="text-decoration: none"  href="{% url 'log' %}">LOGIN</a>
+</div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>Title</title>-->
+<!--                <style>-->
+
+<!-- .form-control-submit-button {-->
+<!--  background-color: white;-->
+<!--  color: black;-->
+<!--  border: 2px solid #B2C248;-->
+<!--}-->
+
+<!--.form-control-submit-button:hover {-->
+<!--  background-color: #B2C248;-->
+<!--  color: white;-->
+<!--  border: 2px solid #B2C248;-->
+<!--}-->
+<!--        </style>-->
+<!--</head>-->
+<!--<body>-->
+
+<!--<center>-->
+
+<!--   <div class="col-lg-12 grid-margin stretch-card">-->
+<!--              <div class="card" style="box-shadow: 2px 4px 8px 2px rgba(0,0,0,0.2); margin-left:30%;margin-right:30%;margin-bottom:30%;">-->
+<!--                <div class="card-body">-->
+<!--                     <h2>LOGIN</h2>-->
+<!--   <p class="mb-4">You don't have a password? Then Sign up as <a class="blue" href="{% url 'stud_reg' %}">Student</a> or-->
+<!--       <a class="blue" href="{% url 'admin_reg' %}">Admin</a></p>-->
+
+<!-- <form method="post">-->
+<!--                                {% csrf_token %}-->
+<!--                                <div class="mb-4 form-floating">-->
+<!--                                    <label for="floatingInput">User Name</label>-->
+<!--                                    <input type="text" class="form-control" id="floatingInput" placeholder="Enter user name" name="uname">-->
+
+<!--                                </div>-->
+<!--                                <div class="mb-4 form-floating">-->
+<!--                                    <label for="floatingPassword">Password</label>-->
+<!--                                    <input type="password" class="form-control" id="floatingPassword" placeholder="Password" name="pass">-->
+
+<!--                                </div>-->
+<!--&lt;!&ndash;                                <div class="mb-4 form-check">&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <label class="form-check-label" for="exampleCheck1">I agree with the site's stated <a href="privacy.html">Privacy Policy</a> and <a href="terms.html">Terms & Conditions</a></label>&ndash;&gt;-->
+<!--&lt;!&ndash;                                </div>&ndash;&gt;-->
+<!--                                <button type="submit" class="form-control-submit-button">Log in</button>-->
+<!--&lt;!&ndash;                                <div>&ndash;&gt;-->
+<!--                                    {% for message in messages %}-->
+<!--                                    <div class="alert alert-info" rele="alert">-->
+<!--                                        <strong>{{message}}</strong>-->
+<!--                                    </div>-->
+<!--                                    {% endfor %}-->
+<!-- </form>-->
+<!--                                </div>-->
+
+<!--</div>-->
+<!--</center>-->
+
+<!--</body>-->
+<!--</html>-->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  </head>
+  <body>
+
+    <center>
+
+   <div class="col-lg-12 grid-margin stretch-card">
+              <div class="card" style="box-shadow: 2px 4px 8px 2px rgba(0,0,0,0.2); margin-left:30%;margin-right:30%;margin-bottom:30%;">
+                <div class="card-body">
+                     <h2 style="color:red">LOGIN</h2>
+   <p class="mb-4">You don't have a password? Then Sign up as <a class="blue" href="{% url 'stud_reg' %}">Student</a> or
+       <a class="blue" href="{% url 'admin_reg' %}">Admin</a></p>
+
+ <form method="post">
+                                {% csrf_token %}
+                                <div class="mb-4 form-floating">
+
+                                    <input type="text" class="form-control" id="floatingInput" placeholder="Enter user name" name="uname">
+                                     <label for="floatingInput">User Name</label>
+                                </div>
+                                <div class="mb-4 form-floating">
+
+                                    <input type="password" class="form-control" id="floatingPassword" placeholder="Password" name="pass">
+<label for="floatingPassword">Password</label>
+                                </div>
+<!--                                <div class="mb-4 form-check">-->
+<!--                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">-->
+<!--                                    <label class="form-check-label" for="exampleCheck1">I agree with the site's stated <a href="privacy.html">Privacy Policy</a> and <a href="terms.html">Terms & Conditions</a></label>-->
+<!--                                </div>-->
+                                <button type="submit" class="btn btn-primary">Log in</button>
+<!--                                <div>-->
+                                    {% for message in messages %}
+                                    <div class="alert alert-info" rele="alert">
+                                        <strong>{{message}}</strong>
+                                    </div>
+                                    {% endfor %}
+ </form>
+                                </div>
+
+</div>
+</center>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  </body>
+</html>
